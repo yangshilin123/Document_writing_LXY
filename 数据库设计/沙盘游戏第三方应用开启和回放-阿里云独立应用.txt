@@ -1,0 +1,25 @@
+
+一、沙盘游戏开启
+#说明：浏览器中打开
+#appId=sp_platfrom_sdu 为固定格式
+#userName根据当前用户进行赋值
+http://47.92.37.196:8090/sp/webgl/sandplayGameProcess/index.html?appId=sp_platfrom_sdu&userName=hello001
+
+二、用户沙游数据获取
+#说明：通过get方式获取用户沙盘数据
+http://47.92.37.196:8090/app/api/getSpList?userName=hello001&appId=sp_platfrom_sdu
+
+
+返回数据
+{"id":21299,
+"gameDesc":"小女孩",
+"gameName":"小女孩",
+"startDateTime":"2022-07-08 12:00:51",
+"finishDateTime":"2022-07-08 12:01:13",
+"gamePicPath":"https://psy-new.oss-cn-zhangjiakou.aliyuncs.com/2022/sandplay/pvfanlh2l0wgpfqcpszu.png"}
+
+
+三、沙盘游戏复现
+#说明：浏览器中打开
+#roundDetailId即为上面接口的id
+http://47.92.37.196:8090/sp/webgl/sandplayReview/index.html?roundDetailId=21313
